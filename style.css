@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+/* HEADER */
+header{
+    padding:20px;
+    text-align:center;
+    background:#111;
+    font-size:22px;
+    color:#e50914;
+}
+
+/* SLIDER */
+.slider{
+    position:relative;
+    height:60vh;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    transition:1s;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+/* CONTROLS */
+.controls{
+    text-align:center;
+    padding:30px 20px;
+}
+
+.controls input{
+    padding:10px;
+    width:250px;
+    border-radius:20px;
+    border:none;
+}
+
+.filters{
+    margin-top:15px;
+}
+
+.filters button{
+    padding:8px 15px;
+    margin:5px;
+    border:none;
+    background:#e50914;
+    color:white;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.filters button:hover{
+    background:#b20710;
+}
+
+/* MOVIES */
+.movies{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    width:200px;
+    background:#1a1a1a;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.4s;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(229,9,20,0.6);
+}
+
+.card span{
+    color:#e50914;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    margin-top:30px;
+}
